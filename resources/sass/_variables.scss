@@ -65,3 +65,42 @@ $line-height-base: 1.6;
     background-repeat: no-repeat;
     display: inline-block;
 }
+
+.actions-like {
+    background-image: url(/resources/images/icons/actions.png); 
+    background-position: 0px -336px; 
+    background-size: 21px 591px; 
+    width: 20px; 
+    height: 20px;
+    background-repeat: no-repeat; 
+    display: inline-block;
+}
+
+.actions-comment {
+    background-image: url(/resources/images/icons/actions.png); 
+    background-position: 0px -168px; 
+    background-size: 21px 591px; 
+    width: 20px; 
+    height: 20px;
+    background-repeat: no-repeat; 
+    display: inline-block;
+}
+
+.actions-shared {
+    background-image: url(/resources/images/icons/actions.png); 
+    background-position: 0px -441px; 
+    background-size: 21px 591px; 
+    width: 20px; 
+    height: 20px;
+    background-repeat: no-repeat; 
+    display: inline-block;
+}
+
+.shadowElement:hover {
+    background-color: #ccc6;
+    border-radius: 22px;
+}
+
+.x5e5rjt {
+    color: #0866ff !important;
+}
