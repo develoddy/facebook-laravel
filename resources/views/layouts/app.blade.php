@@ -146,16 +146,136 @@
                                     {{ Auth::user()->name }}
                                 </a>
 
-                                <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
-                                    <a class="dropdown-item" href="{{ route('logout') }}"
-                                       onclick="event.preventDefault();
-                                                     document.getElementById('logout-form').submit();">
-                                        {{ __('Salir') }}
-                                    </a>
-
-                                    <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
-                                        @csrf
-                                    </form>
+                                <div class="dropdown-menu dropdown-menu-end" style="width: 40vh;" aria-labelledby="navbarDropdown">
+                                    <div class="d-flex flex-column">
+                                        <div class="d-flex w-100">
+                                            {{-- <a class="dropdown-item" href="{{ route('logout') }}"
+                                            onclick="event.preventDefault();
+                                                            document.getElementById('logout-form').submit();">
+                                                {{ __('Salir') }}
+                                            </a>
+    
+                                            <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                                                @csrf
+                                            </form> --}}
+                                        
+                                            <ul class="list-group w-100">
+                                                <li class="list-group-item">
+                                                    <a href="" class="d-flex text-black text-decoration-none">
+                                                        <div class="d-flex flex-row">
+                                                            <div class="p-2">
+                                                                <img src="https://images.unsplash.com/photo-1695504236952-37306fc71896?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3387&q=80"style="border-radius: 50%; height: 40px; width: 40px;">
+                                                            </div>
+                                                            <div class="p-2 d-flex">
+                                                                <div class="p-0 align-self-center">
+                                                                    <span class="fw-bolder">username</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li class="list-group-item">
+                                                    <a href="" class="d-flex text-black text-decoration-none">
+                                                        <div class="d-flex flex-row">
+                                                            <div class="p-2 d-flex align-self-center">
+                                                                <i data-visualcompletion="css-img" class="x1b0d499 xep6ejk" style="background-image: url(&quot;https://static.xx.fbcdn.net/rsrc.php/v3/yO/r/mQZHZtmvvJO.png&quot;); background-position: -147px -105px; background-size: auto; width: 20px; height: 20px; background-repeat: no-repeat; display: inline-block;"></i>
+                                                            </div>
+                                                            <div class="p-2 d-flex">
+                                                                <div class="p-0 align-self-center">
+                                                                    <span class="fw-bolder">Configuración y privacidad</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li class="list-group-item">
+                                                    <a href="" class="d-flex text-black text-decoration-none">
+                                                        <div class="d-flex flex-row">
+                                                            <div class="p-2 d-flex align-self-center">
+                                                                <i data-visualcompletion="css-img" class="x1b0d499 xep6ejk" style="background-image: url(&quot;https://static.xx.fbcdn.net/rsrc.php/v3/y6/r/vZx3HqQM23H.png&quot;); background-position: 0px -193px; background-size: auto; width: 20px; height: 20px; background-repeat: no-repeat; display: inline-block;"></i>
+                                                            </div>
+                                                            <div class="p-2 d-flex">
+                                                                <div class="p-0 align-self-center">
+                                                                    <span class="fw-bolder">Ayuda y asistencia</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li class="list-group-item">
+                                                    <a href="" class="d-flex text-black text-decoration-none">
+                                                        <div class="d-flex flex-row">
+                                                            <div class="p-2 d-flex align-self-center">
+                                                                <i data-visualcompletion="css-img" class="x1b0d499 xep6ejk" style="background-image: url(&quot;https://static.xx.fbcdn.net/rsrc.php/v3/yH/r/ZnKUKO2wdbC.png&quot;); background-position: 0px -725px; background-size: auto; width: 20px; height: 20px; background-repeat: no-repeat; display: inline-block;"></i>
+                                                            </div>
+                                                            <div class="p-2 d-flex">
+                                                                <div class="p-0 align-self-center">
+                                                                    <span class="fw-bolder">Pantalla y accesibilidad</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li class="list-group-item">
+                                                    <a href="" class="d-flex text-black text-decoration-none">
+                                                        <div class="d-flex flex-row">
+                                                            <div class="p-2 d-flex align-self-center">
+                                                                <i data-visualcompletion="css-img" class="x1b0d499 xep6ejk" style="background-image: url(&quot;https://static.xx.fbcdn.net/rsrc.php/v3/y6/r/vZx3HqQM23H.png&quot;); background-position: 0px -67px; background-size: auto; width: 20px; height: 20px; background-repeat: no-repeat; display: inline-block;"></i>
+                                                            </div>
+                                                            <div class="p-2 d-flex">
+                                                                <div class="p-0 align-self-center">
+                                                                    <span class="fw-bolder">Enviar comentarios</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li class="list-group-item">
+                                                    {{-- <a href="" class="d-flex text-black text-decoration-none">
+                                                        <div class="d-flex flex-row">
+                                                            <div class="p-2 d-flex align-self-center">
+                                                                <i data-visualcompletion="css-img" class="x1b0d499 xep6ejk" style="background-image: url(&quot;https://static.xx.fbcdn.net/rsrc.php/v3/yC/r/NS0oM82n5Oe.png&quot;); background-position: 0px -168px; background-size: auto; width: 20px; height: 20px; background-repeat: no-repeat; display: inline-block;"></i>
+                                                            </div>
+                                                            <div class="p-2 d-flex">
+                                                                <div class="p-0 align-self-center">
+                                                                    <span>Cerrar sesión</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </a> --}}
+    
+                                                    
+                                                    <a class="dropdown-item p-0" href="{{ route('logout') }}"
+                                                    onclick="event.preventDefault();
+                                                                    document.getElementById('logout-form').submit();">
+                                                        <div class="d-flex flex-row">
+                                                            <div class="p-2 d-flex align-self-center">
+                                                                <i data-visualcompletion="css-img" class="x1b0d499 xep6ejk" style="background-image: url(&quot;https://static.xx.fbcdn.net/rsrc.php/v3/yC/r/NS0oM82n5Oe.png&quot;); background-position: 0px -168px; background-size: auto; width: 20px; height: 20px; background-repeat: no-repeat; display: inline-block;"></i>
+                                                            </div>
+                                                            <div class="p-2 d-flex">
+                                                                <div class="p-0 align-self-center">
+                                                                    <span class="fw-bolder">{{ __('Cerrar sesión') }}</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+    
+                                                    <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                                                        @csrf
+                                                    </form> 
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div> 
+                                    <div class="p-2 border">
+                                        <div class="d-flex">
+                                            <div class="p-2">
+                                                <footer>
+                                                    Footer
+                                                </footer>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </li>
                         @endguest

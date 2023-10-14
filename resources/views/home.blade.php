@@ -2,9 +2,9 @@
 
 @section('content')
 <div class="container-fluid">
-    <div class="row justify-content-center">
+    <div class="row">
         {{-- Left flex --}}
-        <div class="col col-lg-3 d-sm-none d-md-none d-md-block d-lg-block">
+        <div class="col col-lg-3 d-none d-sm-none d-md-none d-md-block d-lg-none d-xl-block">
             <div class="p-1 d-flex flex-column">
                 <ul class="list-group">
                     <li class="list-group-item px-0 py-1 border-0">
@@ -15,7 +15,9 @@
                                     style="border-radius: 50%; height: 40px; width: 40px;">
                                 </div>
                                 <div class="p-2">
-                                    <div class="p-0"><a href="" class="fw-bold text-black text-decoration-none">username</a></div>
+                                    <div class="p-0">
+                                        <a href="" class="fw-bold text-black text-decoration-none">username</a>
+                                    </div>
                                 </div>
                             </div>
                         </a>
@@ -147,7 +149,7 @@
         </div>
 
         {{-- Center column --}}
-        <div class="col-md-9 col-lg-6">
+        <div class="col-xl-6 col-lg-9 col-md-12">
             <div class="row justify-content-center mb-3">
                 <div class="col">
                     <div class="card border-0">
@@ -215,7 +217,7 @@
         </div>
 
         {{-- Right flex --}}
-        <div class="col-md-3 col-lg-3 d-sm-none d-md-block">
+        <div class="col-md-3 col-lg-3 d-none d-sm-none d-md-none d-lg-block">
             <div class="d-flex flex-column">
                 <div class="d-flex  flex-column align-self-center align-self-md-end">
                     <div class="d-flex flex-column">
