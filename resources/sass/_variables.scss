@@ -104,3 +104,49 @@ $line-height-base: 1.6;
 .x5e5rjt {
     color: #0866ff !important;
 }
+
+// Profile portada
+.mask {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-attachment: fixed;
+}
+
+.bg-image {
+    position: relative;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+}
+
+.bg-portada {
+    background-image: url(/resources/images/background/bg-header-profile.jpeg);
+    height: 400px;
+}
+
+.invert-white {
+    -webkit-filter: invert(100%);
+}
+
+.invert-secondary {
+    -webkit-filter: invert(59%) sepia(11%) saturate(200%) saturate(135%) hue-rotate(176deg) brightness(96%) contrast(94%);
+}
+
+
+@media (max-width: 1200px) {
+    .x15sbx0n {
+        margin-top: -84px;
+    } 
+}
+
+@media (min-width: 1200px) {
+.x14xzxk9 {
+    position: absolute;
+} }

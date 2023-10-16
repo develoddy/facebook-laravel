@@ -163,7 +163,8 @@
             {{-- Center flex --}}
             <div class="row justify-content-center p-5 pt-0">
                 <div class="col-12 mb-3">
-                    <div class="card">
+                    @include('web.general.publish-post')
+                    {{-- <div class="card">
                         <div class="card-header">
                             <div class="d-flex p-2">
                                 <div class="p-0">
@@ -207,9 +208,8 @@
                                 </a>
                             </div>
                         </div>
-                    </div>
+                    </div> --}}
                 </div>
-
                 <div class="col-12 mb-3">
                     @include('web.posts.post')
                 </div>

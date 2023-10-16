@@ -48,7 +48,7 @@
                     <ul class="navbar-nav justify-content-center">
                         @auth
                         <li class="nav-item" style="width: 129.6px;">
-                            <a class="nav-link" href="">
+                            <a class="nav-link" href="{{ route('home') }}" >
                                 <span class="x1n2onr6">
                                     <svg fill="currentColor" style="height: 24px; width:24px;" viewBox="0 0 24 24" width="1em" height="1em" class="x1lliihq x1k90msu x2h7rmj x1qfuztq x5e5rjt xxk0z11 xvy4d1p"><path d="M9.464 1.286C10.294.803 11.092.5 12 .5c.908 0 1.707.303 2.537.786.795.462 1.7 1.142 2.815 1.977l2.232 1.675c1.391 1.042 2.359 1.766 2.888 2.826.53 1.059.53 2.268.528 4.006v4.3c0 1.355 0 2.471-.119 3.355-.124.928-.396 1.747-1.052 2.403-.657.657-1.476.928-2.404 1.053-.884.119-2 .119-3.354.119H7.93c-1.354 0-2.471 0-3.355-.119-.928-.125-1.747-.396-2.403-1.053-.656-.656-.928-1.475-1.053-2.403C1 18.541 1 17.425 1 16.07v-4.3c0-1.738-.002-2.947.528-4.006.53-1.06 1.497-1.784 2.888-2.826L6.65 3.263c1.114-.835 2.02-1.515 2.815-1.977zM10.5 13A1.5 1.5 0 0 0 9 14.5V21h6v-6.5a1.5 1.5 0 0 0-1.5-1.5h-3z"></path></svg><!--$--><span class="x10l6tqk x11f4b5y x1v4kod4"></span><!--/$--></span>
                             </a>
@@ -161,7 +161,7 @@
                                         
                                             <ul class="list-group w-100">
                                                 <li class="list-group-item">
-                                                    <a href="" class="d-flex text-black text-decoration-none">
+                                                    <a href="{{ route('profile') }}" class="d-flex text-black text-decoration-none">
                                                         <div class="d-flex flex-row">
                                                             <div class="p-2">
                                                                 <img src="https://images.unsplash.com/photo-1695504236952-37306fc71896?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3387&q=80"style="border-radius: 50%; height: 40px; width: 40px;">
