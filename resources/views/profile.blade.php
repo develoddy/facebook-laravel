@@ -110,8 +110,8 @@
                                                 <div class="d-flex align-self-center">
                                                     <div class="p-2 d-flex flex-row">
                                                         <div class="p-2 d-flex">
-                                                            <div class="d-flex rounded bg-primary">
-                                                                <a href="" class="d-flex text-decoration-none text-white">
+                                                            <div class="d-flex">
+                                                                <a href="" class="d-flex text-decoration-none btn btn-primary">
                                                                     <div class="px-3 d-flex flex-row">
                                                                         <div class="px-1 align-self-center">
                                                                             <img src="{{ Vite::asset('/resources/images/icons/plus.png') }}" class="img-fluid invert-white">
@@ -124,8 +124,8 @@
                                                             </div>
                                                         </div>
                                                         <div class="p-2 d-flex">
-                                                            <div class="d-flex rounded bg-dark">
-                                                                <a href="" class="d-flex text-decoration-none text-white">
+                                                            <div class="d-flex">
+                                                                <a href="" class="d-flex text-decoration-none btn btn-dark">
                                                                     <div class="px-3 d-flex flex-row">
                                                                         <div class="px-1 align-self-center">
                                                                             <img src="{{ Vite::asset('/resources/images/icons/pencil.png') }}" class="img-fluid invert-white">
@@ -138,11 +138,11 @@
                                                             </div>
                                                         </div>
                                                         <div class="p-2 d-flex">
-                                                            <div class="d-flex rounded bg-dark">
-                                                                <a href="" class="d-flex text-decoration-none text-white">
-                                                                    <div class="p-2 d-flex">
-                                                                        <div class="px-1">
-                                                                            <div class="mt-1">
+                                                            <div class="d-flex">
+                                                                <a href="" class="d-flex text-decoration-none btn btn-dark">
+                                                                    <div class="d-flex">
+                                                                        <div class="px-0">
+                                                                            <div class="mt-2">
                                                                                 <i data-visualcompletion="css-img" class="invert-white" style="background-image:url('https://static.xx.fbcdn.net/rsrc.php/v3/yo/r/6M1PyrHDHdS.png');background-position:0 -345px;background-size:auto;width:16px;height:16px;background-repeat:no-repeat;display:inline-block"></i>
                                                                             </div>
                                                                         </div>
@@ -226,14 +226,145 @@
                                         </div>
                                     </div>
                                 </div>
+
+                                {{-- Item flex content --}}
+                                <div class="d-flex">
+                                    <div class="p-2 d-flex flex-row">
+                                        {{-- Left item --}}
+                                        <div class="p-0 d-flex w-75">
+                                            <div class="d-flex flex-column">
+                                                {{-- Detail profile --}}
+                                                <div class="p-2 d-flex">
+                                                    <div class="card text-star">
+                                                        <div class="card-header">
+                                                            <h4 class="card-title fw-bolder">Detalles</h4>
+                                                        </div>
+                                                        <div class="card-body">
+                                                            <h5 class="card-title">Tratamiento especial del título</h5>
+                                                            <p class="card-text">Con texto de apoyo a continuación como introducción natural a contenido adicional.</p>
+        
+                                                            <div class="d-flex flex-row">
+                                                                <div class="p-2">
+                                                                    <img class="invert-secondary" src="{{ Vite::asset('/resources/images/icons/graduate-icon.png') }}" height="20" width="20" class="img-fluid rounded">
+                                                                </div>
+                                                                <div class="p-2">Ipsum lorem ea</div>
+                                                            </div>
+                                                            <div class="d-flex flex-row">
+                                                                <div class="p-2">
+                                                                    <img class="invert-secondary" src="{{ Vite::asset('/resources/images/icons/home-icon.png') }}" height="20" width="20" class="img-fluid rounded">
+                                                                </div>
+                                                                <div class="p-2">Ipsum lorem ea</div>
+                                                            </div>
+        
+                                                            <div class="d-flex flex-row">
+                                                                <div class="p-2">
+                                                                    <img class="invert-secondary" src="{{ Vite::asset('/resources/images/icons/pin-icon.png') }}" height="20" width="20" class="img-fluid rounded">
+                                                                </div>
+                                                                <div class="p-2">Ipsum lorem ea</div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                {{-- Photos --}}
+                                                <div class="p-2 d-flex ">
+                                                    <div class="card text-star border-0">
+                                                        <div class="card-header px-0 py-2 pb-0 pt-3 border-0">
+                                                            <div class="d-flex flex-row">
+                                                                <div class="p-2 flex-grow-1"><h4 class="card-title fw-bolder">Fotos</h4></div>
+                                                                <div class="p-2 d-flex">
+                                                                    <div class="align-self-center">
+                                                                        <a href="" class="text-decoration-none fw-bolder">
+                                                                            <h5 class="card-title">Ver todas las fotos</h5>
+                                                                        </a>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            
+                                                        </div>
+                                                        <div class="card-body pt-0">
+                                                            <div class="row">
+                                                                <div class="col col-md-10 col-lg-8 col-sm-12 col-xl-12 px-0">
+                                                                    <div class="row">
+                                                                        <div class="col-4 px-2">
+                                                                            <div class="element d-flex h-100 flex-column">
+                                                                                <div class="inner d-flex h-100 flex-column align-items-center justify-content-center">
+                                                                                    <img class="img-fluid img-thumbnail border-0 rounded-0 p-0 pb-2" src="https://source.unsplash.com/sesveuG_rNo/400x300" style="border-top-left-radius: 10px !important;" >
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-4 px-2">
+                                                                            <div class="element d-flex h-100 flex-column">
+                                                                                <div class="inner d-flex h-100 flex-column align-items-center justify-content-center">
+                                                                                    <img class="img-fluid img-thumbnail border-0 rounded-0 p-0 pb-2" src="https://source.unsplash.com/sesveuG_rNo/400x300" >
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-4 px-2">
+                                                                            <div class="element d-flex h-100 flex-column">
+                                                                                <div class="inner d-flex h-100 flex-column align-items-center justify-content-center">
+                                                                                    <img class="img-fluid img-thumbnail border-0 rounded-0 p-0 pb-2" src="https://source.unsplash.com/sesveuG_rNo/400x300" style="border-top-right-radius: 10px !important;">
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-4 px-2">
+                                                                            <div class="element d-flex h-100 flex-column">
+                                                                                <div class="inner d-flex h-100 flex-column align-items-center justify-content-center">
+                                                                                    <img class="img-fluid img-thumbnail border-0 rounded-0 p-0 pb-2" src="https://source.unsplash.com/sesveuG_rNo/400x300" >
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-4 px-2">
+                                                                            <div class="element d-flex h-100 flex-column">
+                                                                                <div class="inner d-flex h-100 flex-column align-items-center justify-content-center">
+                                                                                    <img class="img-fluid img-thumbnail border-0 rounded-0 p-0 pb-2" src="https://source.unsplash.com/sesveuG_rNo/400x300" >
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-4 px-2">
+                                                                            <div class="element d-flex h-100 flex-column">
+                                                                                <div class="inner d-flex h-100 flex-column align-items-center justify-content-center">
+                                                                                    <img class="img-fluid img-thumbnail border-0 rounded-0 p-0 pb-2" src="https://source.unsplash.com/sesveuG_rNo/400x300" >
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-4 px-2">
+                                                                            <div class="element d-flex h-100 flex-column">
+                                                                                <div class="inner d-flex h-100 flex-column align-items-center justify-content-center">
+                                                                                    <img class="img-fluid img-thumbnail border-0 rounded-0 p-0 pb-2" src="https://source.unsplash.com/sesveuG_rNo/400x300" >
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                        {{-- Right item --}}
+                                        <div class="p-0 d-flex w-100">
+                                            <div class="d-flex flex-column  w-100">
+                                                {{-- Item publush --}}
+                                                <div class="p-2 d-flex w-100">
+                                                    @include('web.general.publish-post')
+                                                </div>
+                                                {{-- Item post --}}
+                                                <div class="d-flex">
+                                                    <div class="p-2">
+                                                        @include('web.posts.post')
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-
-            
-
-
             </div>
         </div>
     </div>

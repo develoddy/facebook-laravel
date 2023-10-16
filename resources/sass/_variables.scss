@@ -135,6 +135,10 @@ $line-height-base: 1.6;
     -webkit-filter: invert(100%);
 }
 
+.invert-secondary {
+    -webkit-filter: invert(59%) sepia(11%) saturate(200%) saturate(135%) hue-rotate(176deg) brightness(96%) contrast(94%);
+}
+
 
 @media (max-width: 1200px) {
     .x15sbx0n {
